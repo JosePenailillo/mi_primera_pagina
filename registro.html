@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/Logo Digitaltkd.png" alt=""height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active fw-semibold text-white"aria-current="page" href="login.html">Inicio de Sesión</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active fw-semibold text-white" href="registro.html">Registro de cliente</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active fw-semibold text-white" href="#">Productos</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!-- formulario -->
+
+<br>
+<br>
+   <div class="container">
+        <form>
+            <h1 class="fw-bold">Registro de Cliente</h1>
+            <br>
+            <div>
+                <div class="row g-3">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Usuario" aria-label="Usuario">
+                    </div>
+                </div>
+                <br>
+                <div class="row g-3">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Apellidos" aria-label="Apellidos">
+                    </div>
+                    <div class="col">
+                      <input type="password" class="form-control" placeholder="Contraseña" aria-label="Contraseña">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label"></label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Dirección">
+                </div>
+                <br>
+                <div class="row g-3">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Población/Villa" aria-label="Población/Villa">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Provincia" aria-label="Provincia">
+                    </div>
+                </div>
+                <br>
+                <div class="row g-3">
+                    <div class="col">
+                       
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Teléfono" aria-label="Teléfono">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    
+                  </div>
+               <br>
+                    <div class="col-md-4">
+                      <label for="inputState" class="form-label">Tipo de usuario</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Elija una opción...</option>
+                        <option>Organizador de eventos</option>
+                        <option>Instructor/Maestro</option>
+                        <option>Deportista</option>
+                        <option>Publico general</option>
+                      </select>
+                    </div>
+                    <br>
+                <div class="col">
+                        <h3>Trato</h3>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Ud
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Sr
+                            </label>
+                          </div> 
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Sra
+                            </label>
+                          </div> 
+                    </div>    
+                    <br>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Registrarse</button>
+                        <input class="btn btn-danger" type="reset" value="Reset">
+                    </div>
+                  </form>
+            </div>
+        </form>
+    </div>
+
+
+    
+
+    <!-- Footer -->
+    <div class=" fixed-bottom text-center p-3 bg-primary">
+        <a class="fw-semibold text-white">© 2022 Copyright: José Luis Peñailillo Jorquera</a>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
